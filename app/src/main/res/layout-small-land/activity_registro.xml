@@ -1,0 +1,134 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".act_Registro"
+    android:background="#c6d1ff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Nombre de usuario"
+            android:id="@+id/tvNombreUsuario"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edNombreUsuario"
+            android:layout_below="@+id/tvNombreUsuario"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Contraseña"
+            android:id="@+id/tvContraseñaR"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/edNombreUsuario"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp" />
+
+        <EditText
+            android:inputType="textPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edContraseñaR"
+            android:layout_below="@+id/tvContraseñaR"
+            android:layout_alignLeft="@+id/tvContraseñaR"
+            android:layout_alignStart="@+id/tvContraseñaR"
+            android:layout_alignRight="@+id/edNombreUsuario"
+            android:layout_alignEnd="@+id/edNombreUsuario"
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Atras"
+            android:id="@+id/btAtrasR"
+            android:background="@drawable/presion_boton"
+            android:layout_below="@+id/btRegistrarseR"
+            android:layout_alignLeft="@+id/btRegistrarseR"
+            android:layout_alignStart="@+id/btRegistrarseR"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Registrarse"
+            android:id="@+id/btRegistrarseR"
+            android:background="@drawable/presion_boton"
+            android:layout_below="@+id/edRepite"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Repite la"
+            android:id="@+id/tvRepite1"
+            android:textSize="18dp"
+            android:layout_below="@+id/edContraseñaR"
+            android:layout_alignLeft="@+id/edContraseñaR"
+            android:layout_alignStart="@+id/edContraseñaR"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="contraseña"
+            android:id="@+id/tvRepite2"
+            android:layout_below="@+id/tvRepite1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp" />
+
+        <EditText
+            android:inputType="textPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edRepite"
+            android:layout_below="@+id/tvRepite2"
+            android:layout_alignLeft="@+id/tvRepite2"
+            android:layout_alignStart="@+id/tvRepite2"
+            android:layout_alignRight="@+id/edContraseñaR"
+            android:layout_alignEnd="@+id/edContraseñaR"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView7"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/texto_registro"
+            android:layout_marginTop="20dp" />
+
+    </RelativeLayout>
+
+</ScrollView>

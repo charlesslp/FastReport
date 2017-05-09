@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#c6d1ff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Fecha"
+            android:id="@+id/tvFecha"
+            android:textStyle="bold"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Hora"
+            android:id="@+id/tvHora"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvFecha2"
+            android:layout_alignLeft="@+id/tvFecha2"
+            android:layout_alignStart="@+id/tvFecha2"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Localización"
+            android:id="@+id/tvLocal"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvHora2"
+            android:layout_alignLeft="@+id/tvHora"
+            android:layout_alignStart="@+id/tvHora"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Enviar"
+            android:id="@+id/btEnviar"
+            android:background="@drawable/presion_boton"
+            android:layout_below="@+id/etEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Guardar"
+            android:id="@+id/btGuardFE"
+            android:background="@drawable/presion_boton"
+            android:layout_below="@+id/btEnviar"
+            android:layout_alignLeft="@+id/btEnviar"
+            android:layout_alignStart="@+id/btEnviar"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Fotos"
+            android:id="@+id/tvFotos"
+            android:textStyle="bold"
+            android:layout_below="@+id/button"
+            android:layout_alignLeft="@+id/imageView3"
+            android:layout_alignStart="@+id/imageView3"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Vehiculo"
+            android:id="@+id/tvVeh"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btnAnadirFoto3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Enviar Datos a:"
+            android:id="@+id/tvEnvDat"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvMuestraCoche"
+            android:layout_alignLeft="@+id/tvVeh"
+            android:layout_alignStart="@+id/tvVeh" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/etEmail"
+            android:layout_below="@+id/tvEnvDat"
+            android:layout_alignLeft="@+id/tvEnvDat"
+            android:layout_alignStart="@+id/tvEnvDat"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            android:hint="Introduzca email"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Atras"
+            android:id="@+id/btAtrasFE"
+            android:background="@drawable/presion_boton"
+            android:layout_below="@+id/btGuardFE"
+            android:layout_alignLeft="@+id/btGuardFE"
+            android:layout_alignStart="@+id/btGuardFE"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView2"
+            android:background="@drawable/texto_fast_email"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/spinner"
+            android:layout_below="@+id/tvVeh"
+            android:layout_alignLeft="@+id/tvVeh"
+            android:layout_alignStart="@+id/tvVeh" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/btnAnadirFoto1"
+            android:background="@drawable/anadir_foto"
+            android:layout_below="@+id/tvFotos"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/btnAnadirFoto2"
+            android:background="@drawable/anadir_foto"
+            android:layout_below="@+id/btnAnadirFoto1"
+            android:layout_alignLeft="@+id/btnAnadirFoto1"
+            android:layout_alignStart="@+id/btnAnadirFoto1" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/btnAnadirFoto3"
+            android:background="@drawable/anadir_foto"
+            android:layout_below="@+id/btnAnadirFoto2"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="22-may-2016"
+            android:id="@+id/tvFecha2"
+            android:layout_below="@+id/tvFecha"
+            android:layout_alignLeft="@+id/tvFecha"
+            android:layout_alignStart="@+id/tvFecha"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="22:07"
+            android:id="@+id/tvHora2"
+            android:layout_below="@+id/tvHora"
+            android:layout_alignLeft="@+id/tvLocal"
+            android:layout_alignStart="@+id/tvLocal"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="Ver Localización"
+            android:id="@+id/button"
+            android:background="@drawable/presion_boton"
+            android:layout_below="@+id/imageView3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageView3"
+            android:background="@drawable/boton_localizacion"
+            android:layout_below="@+id/tvLocal"
+            android:layout_alignLeft="@+id/tvLocal"
+            android:layout_alignStart="@+id/tvLocal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/tvMuestraCoche"
+            android:textStyle="bold"
+            android:layout_below="@+id/spinner"
+            android:layout_alignRight="@+id/etEmail"
+            android:layout_alignEnd="@+id/etEmail"
+            android:layout_alignLeft="@+id/tvEnvDat"
+            android:layout_alignStart="@+id/tvEnvDat" />
+
+    </RelativeLayout>
+
+</ScrollView>
